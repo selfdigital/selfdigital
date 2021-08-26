@@ -11,14 +11,14 @@ export class ServiceController {
     return this.servicesService.getServices();
   }
 
-  @Get("service/:id")
-  getService(@Param() id: number) {
-    return this.servicesService.getService(id);
-  }
-
   @Post("service")
   createService(@Body() service: ServiceDto) {
     return this.servicesService.createService(service);
+  }
+
+  @Get("service/:id")
+  getService(@Param() id: number) {
+    return this.servicesService.getService(id);
   }
 
   @Patch("service/:id")

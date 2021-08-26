@@ -10,7 +10,7 @@ import { Oauth2ScopeRepository } from "../oauth2/repositories/oauth2-scope.repos
 import { Oauth2TokenRepository } from "../oauth2/repositories/oauth2-token.repository";
 import { Oauth2ClientRepository } from "../oauth2/repositories/oauth2-client.repository";
 
-const models = [
+export const models = [
   BlogRepository,
   PortfolioRepository,
   UploadRepository,
